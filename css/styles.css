@@ -54,12 +54,15 @@ body {
 
 /* =============== COMPONENTS */
 .modal-btn {
+  padding: 12px 20px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  /* color: #fff; */
+  background-color: transparent;
 }
 
 .modal-btn:hover,
@@ -104,6 +107,30 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   /* color: #9da4bd; */
+}
+
+.section-description-theme-dark {
+  color: var(--primary-text-color-theme-dark);
+}
+
+.section-description-theme-dark {
+  color: var(--primary-text-color-theme-light);
+}
+
+.title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.67;
+  letter-spacing: 0.05em;
+}
+
+.title-theme-dark {
+  color: var(--secondary-text-color-theme-dark);
+}
+
+.title-theme-dark {
+  color: var(--secondary-text-color-theme-light);
 }
 
 /* ================== HEADER */
@@ -170,3 +197,56 @@ body {
   letter-spacing: 0.05em;
   /* color: #fff; */
 }
+
+/* ================== ABOUT */
+
+/* ================== SERVICES */
+.services-table-name,
+.services-table-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-theme-dark);
+}
+
+/* ================== ADVANTAGES */
+.advantages-list-quantity {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--secondary-text-color-theme-light);
+}
+
+.advantages-list-description {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--secondary-text-color-theme-light);
+}
+
+/* ================== EMPLOYEES */
+.employees-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color-theme-light);
+}
+
+.employees-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+/* ================== GALLERY */
+
+/* ================== CONTACT INFO */
