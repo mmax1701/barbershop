@@ -44,6 +44,11 @@ body {
   font-family: var(--primary-font);
 }
 
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -90,7 +95,7 @@ body {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  /* color: rgba(157, 164, 189, 0.6); */
+  margin-bottom: 20px;
 }
 
 .suptitle-theme-dark {
@@ -126,10 +131,12 @@ body {
 }
 
 .title-theme-dark {
+  margin-bottom: 44px;
   color: var(--secondary-text-color-theme-dark);
 }
 
 .title-theme-dark {
+  margin-bottom: 20px;
   color: var(--secondary-text-color-theme-light);
 }
 
@@ -229,6 +236,28 @@ body {
 }
 
 /* ================== EMPLOYEES */
+.employees-section {
+  background-color: #f7f7f7;
+}
+
+.employees-title {
+  margin-bottom: 44px;
+}
+
+.employees {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.employees-card {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.employees-card-content-wrapper {
+  padding-top: 30px;
+}
+
 .employees-name {
   font-weight: 400;
   font-size: 18px;
@@ -236,6 +265,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color-theme-light);
+  margin-bottom: 8px;
 }
 
 .employees-position {
