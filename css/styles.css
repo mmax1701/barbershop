@@ -70,6 +70,14 @@ body {
   background-color: transparent;
 }
 
+.modal-btn-theme-dark {
+  color: var(--secondary-text-color-theme-dark);
+}
+
+.modal-btn-theme-light {
+  color: var(--secondary-text-color-theme-light);
+}
+
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--accent-color);
@@ -153,6 +161,7 @@ body {
 
 .page-nav {
   display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -173,7 +182,6 @@ body {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-  /* color: #fff; */
 }
 
 .menu-link:hover,
@@ -196,16 +204,47 @@ body {
 }
 
 /* ================== HERO */
+.hero-container {
+  display: flex;
+}
+
+.hero-left-side {
+  width: 100px;
+}
+
+.hero-right-side {
+  padding-top: 272px;
+  padding-bottom: 206px;
+  padding-left: 100px;
+  flex-grow: 1;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url('../images/hero/bg.jpg');
+  background-size: cover;
+  background-color: #303030;
+}
+
+.hero-section-description {
+  min-width: 400px;
+}
+
 .main-title {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
-  /* color: #fff; */
+  margin-bottom: 20px;
+  color: var(--secondary-text-color-theme-dark);
 }
 
 /* ================== ABOUT */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* ================== SERVICES */
 .services-table-name,
