@@ -98,6 +98,8 @@ body {
 }
 
 .suptitle {
+  display: flex;
+  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -106,12 +108,28 @@ body {
   margin-bottom: 20px;
 }
 
+.suptitle::before {
+  display: block;
+  width: 60px;
+  height: 1px;
+  content: '';
+  margin-right: 20px;
+}
+
 .suptitle-theme-dark {
-  color: rgba(157, 164, 189, 0.6);
+  color: var(--primary-text-color-theme-dark);
+}
+
+.suptitle-theme-dark::before {
+  background-color: var(--primary-text-color-theme-dark);
 }
 
 .suptitle-theme-light {
-  color: #303030;
+  color: var(--primary-text-color-theme-light);
+}
+
+.suptitle-theme-light::before {
+  background-color: var(--primary-text-color-theme-light);
 }
 
 .section-description {
@@ -247,6 +265,22 @@ body {
 }
 
 /* ================== SERVICES */
+.services-table {
+  flex-basis: 50%;
+  padding: 30px 40px;
+  margin-bottom: 50px;
+  border: 1px solid #cccccc;
+}
+
+.services-table-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-table-row::not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .services-table-name,
 .services-table-price {
   font-weight: 400;
@@ -256,7 +290,42 @@ body {
   color: var(--primary-text-color-theme-dark);
 }
 
+.services-modal-btn {
+  display: block;
+  margin: 0 auto;
+}
+
 /* ================== ADVANTAGES */
+.advantages-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-left-side,
+.advantages-right-side {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 370px;
+  margin: 0 auto;
+}
+
+.advantages-list-item {
+  width: 170px;
+  min-height: 134px;
+  padding: 21px;
+  background-color: #f7f7f7;
+}
+
+.advantages-list-item:nth-child(even) {
+  margin-top: 30px;
+}
+
 .advantages-list-quantity {
   font-weight: 700;
   font-size: 42px;
@@ -317,5 +386,8 @@ body {
 }
 
 /* ================== GALLERY */
+.gallery-suptitle {
+  margin-bottom: 44px;
+}
 
 /* ================== CONTACT INFO */
