@@ -6,6 +6,7 @@
   --secondary-text-color-theme-dark: #fff;
   --secondary-text-color-theme-light: #555;
   --accent-color: #ff6c00;
+  --transition-dur-and-funk: 250ms linear;
 }
 
 h1,
@@ -59,7 +60,10 @@ body {
 
 /* =============== COMPONENTS */
 .modal-btn {
-  padding: 12px 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
   border: 1px solid #ff6c00;
   border-radius: 25px;
   font-weight: 600;
@@ -68,6 +72,8 @@ body {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   background-color: transparent;
+  transition: color var(--transition-dur-and-funk),
+    background-color var(--transition-dur-and-funk);
 }
 
 .modal-btn-theme-dark {
@@ -168,6 +174,10 @@ body {
 
 /* ================== HEADER */
 .page-header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -200,6 +210,8 @@ body {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
+  color: var(--secondary-text-color-theme-dark);
+  transition: color var(--transition-dur-and-funk);
 }
 
 .menu-link:hover,
@@ -214,6 +226,8 @@ body {
   letter-spacing: 0.1em;
   margin-left: auto;
   margin-right: 40px;
+  color: var(--secondary-text-color-theme-dark);
+  transition: color var(--transition-dur-and-funk);
 }
 
 .contact-phone-number:hover,
@@ -422,3 +436,86 @@ body {
 }
 
 /* ================== CONTACT INFO */
+.contact-list-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-theme-dark);
+}
+
+.contact-list-link:hover,
+.contact-list-link:focus {
+  color: var(--accent-color);
+}
+
+/* ================== FOOTER */
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--primary-text-color-theme-dark);
+}
+
+/* ================== MODAL WINDOW */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 580px;
+  background-color: #fff;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #555555;
+  padding: 0;
+  transition: border-color var(--transition-dur-and-funk);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  border-color: var(--accent-color);
+}
+
+.modal-close-btn-icon {
+  transition: fill var(--transition-dur-and-funk);
+}
+
+.modal-close-btn:hover .modal-close-btn-icon,
+.modal-close-btn:focus .modal-close-btn-icon {
+  fill: var(--accent-color);
+}
