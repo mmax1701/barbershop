@@ -364,13 +364,20 @@
             <form class="modal-form">
                 <label class="modal-form-field">
                     <span class="modal-form-input-desk">Name*</span>
-                    <input type="text" name="user_name" class="modal-form-input" required pattern="[a-zA-Zа-яА-я]+"
-                        minlength="2">
+                    <span class="modal-form-input-wrapper">
+                        <input type="text" name="user_name" class="modal-form-input" required pattern="[a-zA-Zа-яА-я]+"
+                            minlength="2">
+                        <span class="modal-form-input-icon"></span>
+                    </span>
                 </label>
                 <label class="modal-form-field">
                     <span class="modal-form-input-desk">Tel*</span>
-                    <input type="tel" name="user_phone" class="modal-form-input" required
-                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="XXX-XXX-XX-XX">
+                    <span class="modal-form-input-wrapper">
+                        <input type="tel" name="user_phone" class="modal-form-input" required
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="XXX-XXX-XX-XX">
+                        <span class="modal-form-input-icon"></span>
+                    </span>
+
                 </label>
                 <label class="modal-form-field">
                     <span class="modal-form-input-desk">Message</span>
